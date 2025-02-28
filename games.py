@@ -3,11 +3,12 @@ import pandas as pd
 
 # Read Excel file
 data = pd.read_excel(
-    "/Users/fabs/Desktop/Fabian/Fußball/SCSR/Trainingslager/trainingslager.xlsx",
+    'https://raw.githubusercontent.com/faaabs_1/game_leaderboard/main/trainingslager.xlsx',
+
     engine="openpyxl",
     sheet_name="python"
 )
-
+print(data.head())
 def get_game_winners(df):
     """
     Identifies the winner of each game and counts how many times each team has won.
