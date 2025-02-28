@@ -3,11 +3,12 @@ import pandas as pd
 
 # Read Excel file
 data = pd.read_excel(
-    'https://raw.githubusercontent.com/faaabs_1/game_leaderboard/main/trainingslager.xlsx',
+    'https://raw.githubusercontent.com/faaabs1/game_leaderboard/main/trainingslager.xlsx',
 
     engine="openpyxl",
     sheet_name="python"
 )
+data.head()
 print(data.head())
 def get_game_winners(df):
     """
