@@ -98,8 +98,9 @@ if menu_option == "🏆 Leaderboard":
         st.title("BSDS 2025 - SCSR Edition")
 
     with col2:
-        image = ""
-        st.image("/Users/fabs/Desktop/Fabian/Fußball/SCSR/scsr_logo.png")
+        image = 'https://raw.githubusercontent.com/faaabs1/game_leaderboard/main/scsr_logo.png',
+
+        st.image(image)
 
     st.divider()
 
